@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lanzadera</title>
+  <meta name="description" content="Todas las apps de Álvaro en un sitio.">
+  <meta name="theme-color" content="#161A33">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lanzadera">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="clock" id="clock"></p>
+    <h1 id="greeting">Hola, Álvaro</h1>
+    <div class="pad" aria-hidden="true">
+      <svg class="rocket" id="rocket" viewBox="0 0 48 80">
+        <path class="flame" d="M18 62 Q24 80 30 62 Q24 70 18 62Z"/>
+        <path class="body" d="M24 4 C34 14 36 30 34 52 L14 52 C12 30 14 14 24 4Z"/>
+        <circle class="window" cx="24" cy="26" r="5"/>
+        <path class="fin" d="M14 40 L6 56 L15 54Z M34 40 L42 56 L33 54Z"/>
+        <rect class="base" x="15" y="52" width="18" height="8" rx="2"/>
+      </svg>
+      <div class="tower"></div>
+      <div class="ground"></div>
+    </div>
+  </header>
+
+  <main id="apps"></main>
+
+  <footer class="foot">
+    <p>Pulsa en <strong>Compartir → Añadir a pantalla de inicio</strong> para tenerla como una app.</p>
+  </footer>
+
+  <script src="apps.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
